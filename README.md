@@ -20,9 +20,7 @@ cd youtube-tutorials/<folder>
 
 ## Stay in touch
 
-- YouTube: *your-channel-link*
-- X / Twitter: *your-handle*
-- LinkedIn: *your-linkedin*
+- YouTube: [@rahulsharma_ytb](https://youtube.com/@rahulsharma_ytb)
 
 ## License
 
