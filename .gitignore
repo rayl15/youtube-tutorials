@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Virtual envs
+venv/
+.venv/
+env/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets — never commit
+.env
+.env.local
+*.pem
+*.key
+
+# Runtime / build artifacts
+output.json
+trust-policy.json
+*.zip
+
+# Docker local state
+.docker/
+
+# Local-only folders (not part of shipped tutorials)
+videos/
+analysis/
+my-video/

@@ -1,0 +1,29 @@
+# YouTube Tutorials
+
+Companion code for my YouTube videos on Agentic AI, AWS, and production ML engineering.
+
+Each folder is a self-contained project paired with a video on the channel. Clone, follow along, ship your own version.
+
+## Projects
+
+| Folder | Topic | Video |
+|---|---|---|
+| [`crewai-aws-multi-agent/`](./crewai-aws-multi-agent) | Build a 3-agent research crew with CrewAI, deploy to AWS Lambda via Docker + ECR, trigger it from the terminal. | *link when published* |
+
+## Using this repo
+
+```bash
+git clone https://github.com/rayl15/youtube-tutorials.git
+cd youtube-tutorials/<folder>
+# each folder has its own README with setup + run instructions
+```
+
+## Stay in touch
+
+- YouTube: *your-channel-link*
+- X / Twitter: *your-handle*
+- LinkedIn: *your-linkedin*
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
