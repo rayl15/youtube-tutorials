@@ -9,6 +9,7 @@ Each folder is a self-contained project paired with a video on the channel. Clon
 | Folder | Topic | Video |
 |---|---|---|
 | [`crewai-aws-multi-agent/`](./crewai-aws-multi-agent) | Build a 3-agent research crew with CrewAI, deploy to AWS Lambda via Docker + ECR, trigger it from the terminal. | *link when published* |
+| [`context-engineering-agent/`](./context-engineering-agent) | The piece nobody builds — a `ContextManager` for production agents on AWS Bedrock. Side-by-side with a naive version so you can see the difference. | *link when published* |
 
 ## Using this repo
 
