@@ -1,0 +1,4 @@
+# Only needed for crew_agent.py — the side-by-side comparison.
+# The custom agent.py runs on `openai` alone (see requirements.txt).
+crewai>=0.80.0
+crewai-tools>=0.20.0

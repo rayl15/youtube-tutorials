@@ -1,0 +1,22 @@
+app:
+  name: agent-demo
+  version: 1.0.0
+  environment: development
+
+database:
+  host: localhost
+  port: 5432
+  name: agent_db
+  user: agent_user
+
+api:
+  host: 0.0.0.0
+  port: 8080
+  cors_origins:
+    - http://localhost:3000
+    - http://localhost:5173
+
+logging:
+  level: info
+  format: json
+  output: stdout
