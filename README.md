@@ -12,6 +12,7 @@ Each folder is a self-contained project paired with a video on the channel. Clon
 | [`context-engineering-agent/`](./context-engineering-agent) | The piece nobody builds — a `ContextManager` for production agents on AWS Bedrock. Side-by-side with a naive version so you can see the difference. | *link when published* |
 | [`agent-reliability/`](./agent-reliability) | Four defensive layers — validation, idempotent tools, retry with backoff, structured logging — that turn a demo agent into one you can actually trust in production. | *link when published* |
 | [`no-framework-agent/`](./no-framework-agent) | A real, working AI agent in 29 lines of Python with one dependency and **no framework**. Plus the same task built with CrewAI, side by side, so you can see the wrapping for yourself. | *link when published* |
+| [`free-claude-code/`](./free-claude-code) | `cc.py` — ~30 lines that do what Claude Code does, using a **free** model (MiniMax M2.5 via OpenRouter — 80.2% SWE-Bench Verified) instead of paid Sonnet. Side-by-side with paid Claude Code on the same 4-file refactor task. The 3 honest catches included. | *link when published* |
 
 ## Using this repo
 
