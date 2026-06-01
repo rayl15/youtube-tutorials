@@ -1,0 +1,17 @@
+[project]
+name = "mcp-devops-starter"
+version = "0.1.0"
+description = "Your first MCP server, DevOps edition — read-only tools to let Claude inspect server health."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "psutil>=5.9.0",
+]
+
+# This is a single-file script project, not an installable package — so tell
+# uv not to try building/installing it. `uv run server.py` just makes a venv
+# with the dependencies above and runs the file. (Without this, uv/hatchling
+# errors with "Unable to determine which files to ship inside the wheel".)
+[tool.uv]
+package = false

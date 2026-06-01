@@ -13,6 +13,8 @@ Each folder is a self-contained project paired with a video on the channel. Clon
 | [`agent-reliability/`](./agent-reliability) | Four defensive layers — validation, idempotent tools, retry with backoff, structured logging — that turn a demo agent into one you can actually trust in production. | *link when published* |
 | [`no-framework-agent/`](./no-framework-agent) | A real, working AI agent in 29 lines of Python with one dependency and **no framework**. Plus the same task built with CrewAI, side by side, so you can see the wrapping for yourself. | *link when published* |
 | [`free-claude-code/`](./free-claude-code) | `cc.py` — ~30 lines that do what Claude Code does, using a **free** model (MiniMax M2.5 via OpenRouter — 80.2% SWE-Bench Verified) instead of paid Sonnet. Side-by-side with paid Claude Code on the same 4-file refactor task. The 3 honest catches included. | *link when published* |
+| [`cursor-void-antigravity-proof/`](./cursor-void-antigravity-proof) | A proof/investigation repo, not a tutorial. Maps the same brain-hands-loop pattern from our 30-line `agent.py` onto **Void** (1,884-line TypeScript fork — `chatThreadService.ts:770`), **Cursor** (10 tools from the leaked system prompt), and **Antigravity** (Google's 3-tool agentic IDE). Every claim links to a verifiable source. | *link when published* |
+| [`mcp-devops-starter/`](./mcp-devops-starter) | Your first **MCP server** (Model Context Protocol), DevOps edition — four read-only tools (`check_disk_usage`, `check_memory`, `list_top_processes`, `tail_log`) that let Claude inspect a machine's health. No frameworks; plugs into Claude Code via `/mcp`. | *link when published* |
 
 ## Using this repo
 

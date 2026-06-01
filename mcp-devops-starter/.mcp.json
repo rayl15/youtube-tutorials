@@ -1,0 +1,9 @@
+{
+  "//": "Project-scoped MCP config for Claude Code. Launch `claude` from this repo folder and it auto-discovers the server. uv resolves server.py from the current directory, so no absolute paths needed.",
+  "mcpServers": {
+    "devops-starter": {
+      "command": "uv",
+      "args": ["run", "server.py"]
+    }
+  }
+}
