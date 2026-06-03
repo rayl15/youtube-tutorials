@@ -1,0 +1,12 @@
+{
+  "//": "Project-scoped MCP config for Claude Code. Launch `claude` from this repo folder and it auto-discovers the server. Set AWS_PROFILE/AWS_REGION in your shell first (use a READ-ONLY profile).",
+  "mcpServers": {
+    "aws-readonly": {
+      "command": "uv",
+      "args": ["run", "server.py"],
+      "env": {
+        "AWS_REGION": "us-east-1"
+      }
+    }
+  }
+}

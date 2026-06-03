@@ -1,0 +1,26 @@
+{
+  "Version": "2012-10-17",
+  "Comment": "Minimal READ-ONLY policy for the aws-mcp-server. Attach to a dedicated IAM user/role used ONLY by this MCP server. The AI can describe/list/read cost data — it physically cannot create, modify, or delete anything.",
+  "Statement": [
+    {
+      "Sid": "ReadOnlyInventory",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeInstances",
+        "ec2:DescribeVolumes",
+        "ec2:DescribeAddresses",
+        "ec2:DescribeSecurityGroups",
+        "s3:ListAllMyBuckets"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadOnlyCostExplorer",
+      "Effect": "Allow",
+      "Action": [
+        "ce:GetCostAndUsage"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
