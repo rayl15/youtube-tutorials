@@ -1,0 +1,5 @@
+# If you prefer pip over uv:
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+mcp[cli]>=1.2.0
+kubernetes>=29.0.0

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+dist/
+build/
+*.egg-info/
+# never commit kubeconfigs / cluster creds
+kubeconfig*
+*.kubeconfig
+.kube/

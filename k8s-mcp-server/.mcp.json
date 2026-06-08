@@ -1,0 +1,9 @@
+{
+  "//": "Project-scoped MCP config for Claude Code. Launch `claude` from this repo folder and it auto-discovers the server. It uses your current kubeconfig context — point that at a READ-ONLY user/context (see rbac-readonly.yaml).",
+  "mcpServers": {
+    "k8s-readonly": {
+      "command": "uv",
+      "args": ["run", "server.py"]
+    }
+  }
+}

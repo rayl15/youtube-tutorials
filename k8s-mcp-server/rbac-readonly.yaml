@@ -1,0 +1,35 @@
+# Read-only RBAC for the k8s-mcp-server.
+# Grants ONLY get/list/watch on the resources the server reads. No create,
+# update, patch, or delete anywhere — so even a buggy tool or a tricked AI
+# cannot mutate the cluster. Apply with: kubectl apply -f rbac-readonly.yaml
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: claude-readonly
+  namespace: default
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: claude-readonly
+rules:
+  - apiGroups: [""]
+    resources: ["pods", "pods/log", "events"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["apps"]
+    resources: ["deployments", "replicasets"]
+    verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: claude-readonly
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: claude-readonly
+subjects:
+  - kind: ServiceAccount
+    name: claude-readonly
+    namespace: default

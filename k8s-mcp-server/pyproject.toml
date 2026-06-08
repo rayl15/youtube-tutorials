@@ -1,0 +1,15 @@
+[project]
+name = "k8s-mcp-server"
+version = "0.1.0"
+description = "Read-only Kubernetes MCP server — let Claude troubleshoot your cluster safely (pods, status, events, logs, deployments)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "kubernetes>=29.0.0",
+]
+
+# Single-file script project, not an installable package — tell uv not to
+# build/install it. `uv run server.py` just makes a venv with the deps + runs it.
+[tool.uv]
+package = false
